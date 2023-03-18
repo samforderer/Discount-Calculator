@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount Calculator</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <nav>
+            <img src="logo.png">
+    </nav>   
+    <main>
+        <h3 class="discount-header">Discount Calculator </h3>
+        <div class="module-container">
+            <div class="original-price-form">
+                <div class="original-price-form-item">
+                    <label for="base-price">Base Price:</label>
+                    <input type="number" id="base-price">
+                </div>
+                <div class="original-price-form-item">
+                    <label for="discounted-price">Discounted Price:</label>
+                    <input type="number" id="discounted-price">   
+                </div>
+            </div>
+            <div class="result-container">
+                <div class="original-price-form-item" id="discount-result">
+                    <label>Discount (%)</label> 
+                    <div class="result-box">    
+                        <span class="result"></span>
+                    </div>  
+                </div>
+            </div> 
+        </div>
+
+        <h3 class="profit-header">Profit Margin</h3>
+        <div class="module-container">
+            <div class="original-price-form">
+                <div class="original-price-form-item">
+                    <label for="cog">COG:</label>
+                    <input type="number" id="cog">
+                </div>
+                <div class="original-price-form-item">
+                    <label for="markup-percent">Markup (%):</label>
+                    <input type="number" id="markup-percent">   
+                </div>
+            </div>
+            <div class="result-container">
+                <div class="original-price-form-item" id="margin-result">
+                    <label>Retail Price ($)</label> 
+                    <div class="result-box">    
+                        <span class="margin-result"></span>
+                    </div>  
+                </div>
+            </div> 
+        </div> 
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
